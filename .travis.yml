@@ -6,3 +6,4 @@ python:
 before_script:
 script:
   - python setpu.py test 
+    
