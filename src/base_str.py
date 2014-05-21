@@ -3,11 +3,11 @@ import string
 
 def base_str(n, radix=None):
   digits = string.digits + string.ascii_letters
+  if radix is None:
+    radix = len(digits)
 
   if not 1 < radix < len(digits)+1:
     raise ValueError("invalid radix {}".format(radix))
-  if radix is None:
-    radix = len(digits)
   
   negative = n < 0
   n = abs(n)
