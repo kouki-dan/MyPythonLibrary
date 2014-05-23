@@ -18,3 +18,5 @@ class BaseStrTest(unittest.TestCase):
     self.assertEqual(base_str(-1351,62), "-lN")
   def test6(self):
     self.assertEqual(base_str(-1351), "-lN")
+  def test7(self):
+    self.assertEqual(base_str(4,51), "4")
