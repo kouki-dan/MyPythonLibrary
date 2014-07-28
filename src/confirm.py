@@ -2,11 +2,10 @@
 def confirm(text):
   success = False
   while True:
-    print(text + " Y/n:", end="")
-    text = input()
-    if text == "Y":
+    answer = input(text + " Y/n:")
+    if answer == "Y":
       success = True
       break
-    elif text == "n" or text == "N":
+    elif answer == "n" or answer == "N":
       break
   return success
